@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя Сторінка</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      .header {
+        background-color: #d0e7ff;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        border: 1px solid black;
+      }
+
+      .header .title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .header .number {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        height: calc(100% - 200px);
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #ffe6cc;
+        width: 20%;
+      }
+
+      .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sidebar.left {
+        border-right: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sidebar.right {
+        border-left: 1px solid black;
+      }
+
+      .block-3 {
+        height: 40px;
+        width: 100%;
+        background-color: #c0fdae;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .block-5 {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+
+      .block-4 {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+
+      .block-5 {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+
+      .centered {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .block-6 {
+        height: 40px;
+        width: 100%;
+        background-color: #c0fdae;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid black;
+      }
+
+      .footer {
+        background-color: #d0e7ff;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        border: 1px solid black;
+      }
+
+      .footer .title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .footer .number {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      @media (max-width: 768px) {
+        .header,
+        .footer {
+          flex-direction: column;
+          height: auto;
+        }
+        .content {
+          flex-direction: column;
+        }
+        .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title"><h1>Моя Сторінка</h1></div>
+      <div class="number"><h2>Про котиків</h2></div>
+    </div>
+    <div class="content">
+      <div class="sidebar left">
+        <div class="centered">
+          <p>
+            Котики — це наймиліші створіння на землі, які здатні підняти настрій
+            у будь-яку хвилину. Вони грайливі, ніжні та дуже цікаві.
+          </p>
+          <p>
+            Дослідження показують, що спостереження за котиками знижує рівень
+            стресу та покращує емоційний стан. Їх муркотіння діє заспокійливо, а
+            їхні кумедні витівки завжди викликають посмішку.
+          </p>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="block-3">Голова сторінка</div>
+        <div class="block-5">
+          <img
+            src="https://scontent.fiev22-2.fna.fbcdn.net/v/t1.6435-9/171786757_103256751892573_4987018888461880124_n.png?stp=c0.151.962.502a_dst-jpg_s526x296_tt6&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=OKqk-AU2nEYQ7kNvgHs_Fxo&_nc_zt=23&_nc_ht=scontent.fiev22-2.fna&_nc_gid=AajQ9Ums96VlpPcV-KoLmrr&oh=00_AYAIHyT5Bv-uHW04FbkIVob2E91G3nAbzHEY52iAIrVV6w&oe=67AB4550"
+            alt="Kitten"
+          />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4362.069354569017!2d30.5604771765558!3d50.42652487158766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76e65d4dad%3A0x247b398f405dff8f!2z0JHQsNGC0YzQutGW0LLRidC40L3QsC3QnNCw0YLQuA!5e1!3m2!1suk!2sua!4v1736696888034!5m2!1suk!2sua"
+            width="500"
+            height="300"
+            style="border: 0; margin-top: 10px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="sidebar right">
+        <div class="block-4">
+          <ul>
+            <li><a href="index.html">Про котиків</a></li>
+            <li><a href="./pages/page1.html">Про собак</a></li>
+            <li><a href="./pages/page2.html">Про попугаїв</a></li>
+            <li><a href="./pages/page3.html">Про морських свинок</a></li>
+            <li><a href="./pages/page4.html">Про хом'яків</a></li>
+          </ul>
+        </div>
+        <div class="block-6">
+          <div class="centered">ПІБ Розробника</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="title">Номер телефону</div>
+      <div class="number">Пошта</div>
+    </div>
+  </body>
+</html>
